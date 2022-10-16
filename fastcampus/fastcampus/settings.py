@@ -34,6 +34,7 @@ ALLOWED_HOSTS = [
     "18.182.17.227","172.31.9.233",
     "dualstack.devops-elb-526052117.ap-northeast-1.elb.amazonaws.com",
     "ujutechnology.com","www.ujutechnology.com",
+    "103.4.11.14","172.31.0.189","ec2-103-4-11-14.ap-northeast-1.compute.amazonaws.com",
     ]
 
 
