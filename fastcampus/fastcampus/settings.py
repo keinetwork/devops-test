@@ -32,7 +32,7 @@ ALLOWED_HOSTS = [
     "13.231.197.211","172.31.3.228",
     "devops-elb-526052117.ap-northeast-1.elb.amazonaws.com",
     "18.182.17.227","172.31.9.233",
-    "ujutechnology.com"
+    "ujutechnology.com","www.ujutechnology.com",
     ]
 
 
