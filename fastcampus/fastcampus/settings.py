@@ -26,15 +26,8 @@ SECRET_KEY = "django-insecure-@k_ik^wsu#aeih*nd$3i-91)o4j$^4+bn4po#=lhuvu2o7&8n&
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "ec2-13-231-157-221.ap-northeast-1.compute.amazonaws.com",
-    "13.231.157.221","172.31.12.99",
-    "ec2-13-231-197-211.ap-northeast-1.compute.amazonaws.com",
-    "13.231.197.211","172.31.3.228",
-    "devops-elb-526052117.ap-northeast-1.elb.amazonaws.com",
-    "18.182.17.227","172.31.9.233",
-    "dualstack.devops-elb-526052117.ap-northeast-1.elb.amazonaws.com",
     "ujutechnology.com","www.ujutechnology.com",
-    "103.4.11.14","172.31.0.189","ec2-103-4-11-14.ap-northeast-1.compute.amazonaws.com",
+    "3.34.189.27","172.31.1.119","ec2-3-34-189-27.ap-northeast-2.compute.amazonaws.com",
     ]
 
 
