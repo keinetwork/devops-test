@@ -26,8 +26,7 @@ SECRET_KEY = "django-insecure-@k_ik^wsu#aeih*nd$3i-91)o4j$^4+bn4po#=lhuvu2o7&8n&
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "ujutechnology.com","www.ujutechnology.com",
-    "3.34.189.27","172.31.1.119","ec2-3-34-189-27.ap-northeast-2.compute.amazonaws.com",
+    "*",
     ]
 
 
@@ -43,6 +42,7 @@ INSTALLED_APPS = [
     "order",
     "boss",    
     "delivery",
+    "user",
     "rest_framework",
 ]
 
@@ -86,7 +86,7 @@ DATABASES = {
         "NAME": "devops",
         "USER": "admin",
         "PASSWORD": "fastcampus",
-        "HOST": "fastcampus-devops.cspan9q2xlnm.ap-northeast-2.rds.amazonaws.com",
+        "HOST": "devops.cspan9q2xlnm.ap-northeast-2.rds.amazonaws.com",
         "PORT": "3306",
         "OPTIONS": {
             "init_command": "SET sql_mode='STRICT_TRANS_TABLES'"
