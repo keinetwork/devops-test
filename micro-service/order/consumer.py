@@ -1,9 +1,11 @@
 import pika
-import os, django
-from user_order.models import Order, Shop
+import os, django, json
 
-os.environ.setdefault("DJANGO_SETTINGS_MODEL", 'order.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE",'order.settings')
 django.setup()
+
+from user_order.models import Order,Shop
+
 
 params = pika.URLParameters('amqps://hlvjquvf:kY5awSPhgzrMre23Gi4ziZCS7uC1txwg@dingo.rmq.cloudamqp.com/hlvjquvf')
 
@@ -16,7 +18,6 @@ channel.queue_declare(queue='order')
 def callback(ch, method, properties, body):
     print('Received in order')
     id = json.loads(body)
-    print(id)
     order = Order.objects.get(id=id)
     order.deliver_finish = 1
     order.save()
